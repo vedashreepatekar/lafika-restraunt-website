@@ -1,0 +1,38 @@
+[
+  {
+    "id": "review-1",
+    "name": "Pranav Deshmukh",
+    "rating": 5,
+    "date": "2 weeks ago",
+    "comment": "La'Fika is hands down the finest dining spot in Amravati! The warm wood-paneling and bamboo lighting make you feel like you are in a premium resort. Beautiful ambience and delicious food.",
+    "avatar": "PD",
+    "tag": "Fine Dining"
+  },
+  {
+    "id": "review-2",
+    "name": "Ananya Kulkarni",
+    "rating": 5,
+    "date": "1 month ago",
+    "comment": "Great place for celebrations! We celebrated my father's 50th birthday here, and Raghuvir's team made it unforgettable. The staff is extremely warm, and the paneer starters are incredible.",
+    "avatar": "AK",
+    "tag": "Family Celebration"
+  },
+  {
+    "id": "review-3",
+    "name": "Rohan Shah",
+    "rating": 5,
+    "date": "3 days ago",
+    "comment": "The place has a relaxing vibe, perfect for family dinners. We ordered Italian and Main Course—both were outstanding. The signature Woodfired pizza has that perfect Napoli blister!",
+    "avatar": "RS",
+    "tag": "Family Dinner"
+  },
+  {
+    "id": "review-4",
+    "name": "Meera Joshi",
+    "rating": 5,
+    "date": "3 weeks ago",
+    "comment": "Absolutely love the warm lighting and cosy wooden partitions. It's totally Instagram-worthy and very elegant. A true gem in Sharda Vihar! Will be visiting again for sure.",
+    "avatar": "MJ",
+    "tag": "Highly Recommended"
+  }
+]

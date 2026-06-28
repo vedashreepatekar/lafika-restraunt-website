@@ -1,0 +1,6 @@
+{
+  "name": "La'Fika Multicuisine Restaurant",
+  "description": "Experience fine multicuisine dining in Amravati, Maharashtra. Elegant ambience, delicious food, and unforgettable moments at La'Fika by Raghuvir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
