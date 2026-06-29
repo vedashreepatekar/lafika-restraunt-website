@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { GalleryImage } from "../types";
+import ImageWithFallback from "./ImageWithFallback";
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -10,73 +11,73 @@ export default function Gallery() {
   const images: GalleryImage[] = [
     {
       id: "gal-1",
-      src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery1.jpeg",
       category: "Ambiance",
       alt: "Warm bamboo ceiling and glowing wicker lamps in La Fika Dining room"
     },
     {
       id: "gal-2",
-      src: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery2.jpeg",
       category: "Food",
       alt: "Gourmet platter of fresh Paneer starters cooked in our clay oven"
     },
     {
       id: "gal-3",
-      src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery3.jpeg",
       category: "Interior",
       alt: "Wave design counter bar with suspended bamboo stalk installations"
     },
     {
       id: "gal-4",
-      src: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery4.jpeg",
       category: "Food",
       alt: "Fresh woodfired Napoli pizza being sliced"
     },
     {
       id: "gal-5",
-      src: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery5.jpeg",
       category: "Interior",
       alt: "Cozy wrap-around leather sofa booth with premium table layouts"
     },
     {
       id: "gal-6",
-      src: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery6.jpeg",
       category: "Desserts",
       alt: "Molten hot fudge sizzling chocolate brownie on skillet"
     },
     {
       id: "gal-7",
-      src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery7.jpeg",
       category: "Ambiance",
       alt: "Glow of wicker pendant lamps over warm wooden partitions"
     },
     {
       id: "gal-8",
-      src: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery8.jpeg",
       category: "Desserts",
       alt: "Classic tiramisu heavily layered with cocoa"
     },
     {
       id: "gal-9",
-      src: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery9.jpeg",
       category: "Chef",
       alt: "Professional chef plating woodfiring gourmet meals with elegance"
     },
     {
       id: "gal-10",
-      src: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery10.jpeg",
       category: "Ambiance",
       alt: "Gourmet tables set with elegant crystal glasses under a cozy warm twilight atmosphere"
     },
     {
       id: "gal-11",
-      src: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery11.jpeg",
       category: "Drinks",
       alt: "Refreshing passionfruit mocktails and wood-shaved orange cocktails at the bar"
     },
     {
       id: "gal-12",
-      src: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800",
+      src: "/images/gallery/gallery12.jpeg",
       category: "Drinks",
       alt: "Siphon and espresso preparations sourced from organic Coorg coffee beans"
     }
@@ -183,12 +184,11 @@ export default function Gallery() {
                   className="break-inside-avoid relative rounded-sm overflow-hidden group cursor-pointer border border-gold/15 shadow-lg hover:border-gold/40 transition-all duration-300"
                   id={`gallery-item-${img.id}`}
                 >
-                  <img
+                  <ImageWithFallback
                     src={img.src}
                     alt={img.alt}
                     className="w-full h-auto object-cover rounded-sm transition-transform duration-700 group-hover:scale-[1.04]"
                     loading="lazy"
-                    referrerPolicy="no-referrer"
                   />
                   
                   {/* Glassmorphic hover overlay */}
@@ -251,17 +251,20 @@ export default function Gallery() {
 
             {/* Active Display Container */}
             <div className="max-w-5xl max-h-[80vh] w-full flex justify-center items-center p-4 relative">
-              <motion.img
+              <motion.div
                 key={filteredImages[activeImageIndex].id}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                src={filteredImages[activeImageIndex].src}
-                alt={filteredImages[activeImageIndex].alt}
-                className="max-w-full max-h-[75vh] object-contain rounded-sm shadow-2xl border border-white/10"
-                referrerPolicy="no-referrer"
-              />
+                className="max-w-full max-h-[75vh]"
+              >
+                <ImageWithFallback
+                  src={filteredImages[activeImageIndex].src}
+                  alt={filteredImages[activeImageIndex].alt}
+                  className="max-w-full max-h-[75vh] object-contain rounded-sm shadow-2xl border border-white/10"
+                />
+              </motion.div>
             </div>
 
             {/* Right navigation trigger */}

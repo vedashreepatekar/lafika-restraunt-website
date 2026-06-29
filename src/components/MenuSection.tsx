@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Search, Flame, CircleDot, Sparkles, X, ArrowRight, Eye, Heart } from "lucide-react";
 import menuData from "../data/menu.json";
 import { MenuItem } from "../types";
+import ImageWithFallback from "./ImageWithFallback";
 
 export default function MenuSection() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -197,12 +198,11 @@ export default function MenuSection() {
                 >
                   {/* Image & Badges Banner */}
                   <div className="relative aspect-[4/3] bg-charcoal/30 overflow-hidden">
-                    <img
+                    <ImageWithFallback
                       src={item.image}
                       alt={item.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
-                      referrerPolicy="no-referrer"
                     />
                     
                     {/* Floating labels */}
@@ -341,11 +341,10 @@ export default function MenuSection() {
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Left side Image */}
                 <div className="relative h-64 md:h-full min-h-[240px] bg-charcoal">
-                  <img
+                  <ImageWithFallback
                     src={selectedItem.image}
                     alt={selectedItem.name}
                     className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">

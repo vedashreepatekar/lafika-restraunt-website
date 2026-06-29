@@ -5,7 +5,7 @@
     "description": "A signature chef-special paneer dish unique to La'Fika, prepared with rich spices and premium ingredients.",
     "price": 379,
     "category": "Signature Dish",
-    "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/paneer-lafika-special.jpeg",
     "isPopular": true,
     "isVegetarian": true,
     "spicyLevel": 1
@@ -16,7 +16,7 @@
     "description": "Smoky grilled cottage cheese marinated in traditional Indian spices.",
     "price": 349,
     "category": "Starter",
-    "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/paneer-tikka-angara.jpeg",
     "isPopular": true,
     "isVegetarian": true,
     "spicyLevel": 2
@@ -27,7 +27,7 @@
     "description": "Fresh pita stuffed with crispy falafel, vegetables, and creamy sauces.",
     "price": 299,
     "category": "Small Plates",
-    "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/falafel-pita-pocket.jpeg",
     "isPopular": false,
     "isVegetarian": true,
     "spicyLevel": 0
@@ -38,7 +38,7 @@
     "description": "Steamed dumplings filled with mushrooms, cheese, truffle, and garlic.",
     "price": 349,
     "category": "Dimsum",
-    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/truffle-mushroom-dimsum.jpeg",
     "isPopular": true,
     "isVegetarian": true,
     "spicyLevel": 1
@@ -49,7 +49,7 @@
     "description": "Fragrant rice tossed with roasted garlic and vegetables.",
     "price": 229,
     "category": "Rice",
-    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/burnt-garlic-rice.jpeg",
     "isPopular": false,
     "isVegetarian": true,
     "spicyLevel": 1
@@ -60,7 +60,7 @@
     "description": "Soft paneer cubes cooked in rich buttery tomato gravy.",
     "price": 349,
     "category": "Main Course",
-    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/paneer-butter-masala.jpeg",
     "isPopular": true,
     "isVegetarian": true,
     "spicyLevel": 1
@@ -71,7 +71,7 @@
     "description": "Thin crust pizza topped with mozzarella, tomato sauce, and fresh basil.",
     "price": 299,
     "category": "Thin Crust Pizza",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/margherita-pizza.jpeg",
     "isPopular": false,
     "isVegetarian": true,
     "spicyLevel": 0
@@ -82,7 +82,7 @@
     "description": "Creamy white sauce pasta made with premium herbs and parmesan.",
     "price": 379,
     "category": "Pasta",
-    "image": "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&q=80&w=800",
+    "image": "/images/menu/alfredo-pasta.jpeg",
     "isPopular": true,
     "isVegetarian": true,
     "spicyLevel": 0

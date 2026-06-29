@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Calendar, Compass, ShieldCheck, Heart, Sparkles, BookOpen } from "lucide-react";
+import ImageWithFallback from "./ImageWithFallback";
 
 type AboutTab = "story" | "started" | "philosophy";
 
@@ -131,12 +132,11 @@ export default function About() {
               className="absolute top-0 left-0 w-[65%] h-[65%] rounded-sm overflow-hidden shadow-2xl z-20 border-[4px] border-gold/20"
               id="collage-img-1"
             >
-              <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=700"
+              <ImageWithFallback
+                src="/images/gallery/gallery1.jpeg"
                 alt="La Fika Warm Wooden Interior & Bamboo Ceiling vibe"
                 className="w-full h-full object-cover"
                 loading="lazy"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-3 left-3 bg-charcoal/90 text-white text-[10px] uppercase tracking-widest px-3 py-1 font-mono rounded-sm backdrop-blur-sm border border-gold/20">
                 Warm Bamboo Lighting
@@ -153,12 +153,11 @@ export default function About() {
               className="absolute bottom-4 right-0 w-[55%] h-[55%] rounded-sm overflow-hidden shadow-2xl z-30 border-[4px] border-gold/20"
               id="collage-img-2"
             >
-              <img
-                src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&q=80&w=700"
+              <ImageWithFallback
+                src="/images/gallery/gallery4.jpeg"
                 alt="La Fika Fine Plated Dish"
                 className="w-full h-full object-cover"
                 loading="lazy"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-3 right-3 bg-gold text-charcoal text-[10px] uppercase tracking-widest font-mono font-bold px-3 py-1 rounded-sm shadow-md">
                 Gourmet Selection
@@ -175,12 +174,11 @@ export default function About() {
               className="absolute top-6 right-[5%] w-[35%] h-[35%] rounded-sm overflow-hidden shadow-xl z-10 border-[3px] border-gold/20"
               id="collage-img-3"
             >
-              <img
-                src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=500"
+              <ImageWithFallback
+                src="/images/gallery/gallery7.jpeg"
                 alt="La Fika Stylish Wave Bar Counter"
                 className="w-full h-full object-cover"
                 loading="lazy"
-                referrerPolicy="no-referrer"
               />
             </motion.div>
           </div>

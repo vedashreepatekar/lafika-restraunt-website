@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C494" />
+      <stop offset="100%" stop-color="#9A7B56" />
+    </linearGradient>
+    <linearGradient id="dark-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1d21" />
+      <stop offset="100%" stop-color="#141517" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#dark-grad)" />
+  
+  <g transform="translate(200, 200) scale(0.9)">
+    <!-- Plate base line -->
+    <line x1="-120" y1="50" x2="120" y2="50" stroke="url(#gold-grad)" stroke-width="3" stroke-linecap="round" />
+    <line x1="-100" y1="58" x2="100" y2="58" stroke="url(#gold-grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+    
+    <!-- Cloche cover dome -->
+    <path d="M-90,40 C-90,-50 90,-50 90,40 Z" fill="none" stroke="url(#gold-grad)" stroke-width="2.5" />
+    <circle cx="0" cy="-55" r="12" fill="none" stroke="url(#gold-grad)" stroke-width="2.5" />
+    
+    <!-- Elegant geometric sparks/stars -->
+    <path d="M-130,-40 L-125,-45 L-120,-40 L-125,-35 Z" fill="url(#gold-grad)" />
+    <path d="M120,-60 L124,-64 L128,-60 L124,-56 Z" fill="url(#gold-grad)" />
+    <path d="M0,0 M-20,10 A 10 10 0 0 1 20 10" fill="none" stroke="url(#gold-grad)" stroke-width="1" stroke-dasharray="3 3" opacity="0.5" />
+    
+    <!-- Placeholder text -->
+    <text x="0" y="105" font-family="'Playfair Display', serif" font-size="20" font-weight="600" fill="#FDFBF7" text-anchor="middle" letter-spacing="2">LA'FIKA</text>
+    <text x="0" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="400" fill="url(#gold-grad)" text-anchor="middle" letter-spacing="4" opacity="0.8">GOURMET SPECIALTY</text>
+  </g>
+</svg>

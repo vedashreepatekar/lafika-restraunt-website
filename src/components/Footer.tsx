@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Facebook, Instagram, MessageSquare, PhoneCall, Heart, ArrowUpCircle, MapPin, ExternalLink } from "lucide-react";
+import ImageWithFallback from "./ImageWithFallback";
 
 export default function Footer() {
   const handleScrollToTop = () => {
@@ -15,12 +16,12 @@ export default function Footer() {
 
   // 6 mock premium Instagram posts matching La'Fika's style
   const instagramFeed = [
-    { id: 1, img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=250", likes: "1.2k" },
-    { id: 2, img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=250", likes: "984" },
-    { id: 3, img: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=250", likes: "1.5k" },
-    { id: 4, img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=250", likes: "2.1k" },
-    { id: 5, img: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&q=80&w=250", likes: "1.8k" },
-    { id: 6, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=250", likes: "843" }
+    { id: 1, img: "/images/gallery/gallery4.jpeg", likes: "1.2k" },
+    { id: 2, img: "/images/gallery/gallery1.jpeg", likes: "984" },
+    { id: 3, img: "/images/gallery/gallery3.jpeg", likes: "1.5k" },
+    { id: 4, img: "/images/gallery/gallery11.jpeg", likes: "2.1k" },
+    { id: 5, img: "/images/gallery/gallery6.jpeg", likes: "1.8k" },
+    { id: 6, img: "/images/gallery/gallery8.jpeg", likes: "843" }
   ];
 
   return (
@@ -152,12 +153,11 @@ export default function Footer() {
                   className="relative aspect-square rounded-sm overflow-hidden group border border-gold/10 hover:border-gold/30 transition-all"
                   id={`footer-insta-${post.id}`}
                 >
-                  <img
+                  <ImageWithFallback
                     src={post.img}
                     alt={`LaFika Instagram post ${post.id}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
-                    referrerPolicy="no-referrer"
                   />
                   {/* Heart overlay on hover */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center z-10 text-white">

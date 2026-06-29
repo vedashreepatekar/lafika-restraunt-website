@@ -19,7 +19,7 @@ export default function Hero() {
         <div
           className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-10000 scale-105"
           style={{
-            backgroundImage: `linear-gradient(rgba(14, 15, 17, 0.75), rgba(14, 15, 17, 0.85)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1600')`,
+            backgroundImage: `linear-gradient(rgba(14, 15, 17, 0.75), rgba(14, 15, 17, 0.85)), url('/images/hero/hero.jpeg')`,
             backgroundAttachment: "fixed"
           }}
         />

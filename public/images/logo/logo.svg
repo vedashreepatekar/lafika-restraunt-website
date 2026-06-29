@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C494" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#9A7B56" />
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141517" />
+      <stop offset="100%" stop-color="#0E0F11" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" stroke-dasharray="10 5" opacity="0.6" />
+  <circle cx="250" cy="250" r="215" fill="none" stroke="url(#gold-grad)" stroke-width="3" />
+  
+  <!-- Emblem -->
+  <g transform="translate(250, 195) scale(0.95)">
+    <!-- Decorative geometric luxury lines -->
+    <path d="M-60,-20 L0,-80 L60,-20 L0,40 Z" fill="none" stroke="url(#gold-grad)" stroke-width="2" />
+    <path d="M-45,-20 L0,-65 L45,-20 L0,25 Z" fill="none" stroke="url(#gold-grad)" stroke-width="1" opacity="0.7" />
+    <circle cx="0" cy="-20" r="15" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" />
+    <circle cx="0" cy="-20" r="5" fill="url(#gold-grad)" />
+    <line x1="-80" y1="-20" x2="80" y2="-20" stroke="url(#gold-grad)" stroke-width="1.5" />
+    <line x1="0" y1="-100" x2="0" y2="60" stroke="url(#gold-grad)" stroke-width="1.5" />
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="325" font-family="'Playfair Display', 'Georgia', serif" font-size="44" font-weight="bold" fill="#FDFBF7" text-anchor="middle" letter-spacing="4">LA'FIKA</text>
+  <text x="250" y="365" font-family="'Plus Jakarta Sans', 'Helvetica', sans-serif" font-size="14" font-weight="600" fill="url(#gold-grad)" text-anchor="middle" letter-spacing="10">RAGHUVIR</text>
+  <text x="250" y="410" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="400" fill="#FDFBF7" opacity="0.4" text-anchor="middle" letter-spacing="6">FINE DINING &amp; CELEBRATIONS</text>
+</svg>
