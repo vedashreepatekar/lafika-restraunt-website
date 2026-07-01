@@ -86,12 +86,12 @@ export default function Navbar() {
           {/* Call Action & Toggle Button */}
           <div className="flex items-center space-x-4">
             <a
-              href="tel:+919822700330"
+              href="tel:+7777889990"
               className="hidden sm:flex items-center space-x-2 text-xs uppercase tracking-wider font-semibold text-white/90 hover:text-gold transition-colors"
               title="Call us now"
             >
               <PhoneCall size={14} className="text-gold" />
-              <span className="font-mono text-[11px]">+91 98227 00330</span>
+              <span className="font-mono text-[11px]">+91 7777889990</span>
             </a>
 
             <button
@@ -156,11 +156,11 @@ export default function Navbar() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                href="tel:+919822700330"
+                href="tel:+917777889990"
                 className="flex items-center space-x-2 text-xs uppercase tracking-widest text-gold font-mono font-bold"
               >
                 <PhoneCall size={14} />
-                <span>+91 98227 00330</span>
+                <span>+91 7777889990</span>
               </motion.a>
 
               <motion.button

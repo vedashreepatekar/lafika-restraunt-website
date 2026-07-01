@@ -92,7 +92,7 @@ export default function ReservationForm() {
 
   const generateWhatsAppUrl = (ticket: any) => {
     const messageText = `Hello La'Fika by Raghuvir! *Reservation Request* \n\n*Reference ID:* ${ticket.id}\n*Name:* ${ticket.name}\n*Phone:* ${ticket.phone}\n*Date:* ${ticket.date}\n*Time:* ${ticket.time}\n*Guests:* ${ticket.guests} Pax\n*Special Request:* ${ticket.specialRequest || "None"}\n\nPlease confirm our booking. Thank you!`;
-    return `https://wa.me/919822700330?text=${encodeURIComponent(messageText)}`;
+    return `https://wa.me/917777889990?text=${encodeURIComponent(messageText)}`;
   };
 
   return (
@@ -294,7 +294,7 @@ export default function ReservationForm() {
                             required
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="e.g. +91 9822700330"
+                            placeholder="e.g. +91 7777889990"
                             className="w-full px-4 py-3 bg-black/40 border border-gold/15 focus:border-gold rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-gold transition-all text-white placeholder-white/20"
                           />
                         </div>

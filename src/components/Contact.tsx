@@ -1,7 +1,7 @@
 import { MapPin, Phone, MessageSquare, Instagram, Mail, Compass, Clock, ArrowRight } from "lucide-react";
 
 export default function Contact() {
-  const whatsappNumber = "919822700330";
+  const whatsappNumber = "917777889990";
   const whatsappMessage = "Hi La'Fika! I would like to inquire about tables or check availability.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const instagramUrl = "https://instagram.com/lafika.amravati"; // Placeholder or real
@@ -84,8 +84,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider font-bold text-gold font-mono mb-1">Calling Registry</h4>
-                  <a href="tel:+919822700330" className="text-sm font-bold text-white hover:text-gold transition-colors font-mono block">
-                    +91 98227 00330
+                  <a href="tel:+917777889990" className="text-sm font-bold text-white hover:text-gold transition-colors font-mono block">
+                    +91 7777889990
                   </a>
                   <p className="text-[10px] text-cream/40 font-mono">Mobile Hotline &bull; Click to dial</p>
                 </div>
@@ -135,7 +135,7 @@ export default function Contact() {
 
               {/* Call Hotline */}
               <a
-                href="tel:+919822700330"
+                href="tel:+917777889990"
                 className="p-4 bg-gold hover:bg-gold-light text-charcoal rounded-sm font-bold text-xs uppercase tracking-widest flex items-center justify-center space-x-2 shadow-sm col-span-2 transition-all text-center"
                 id="contact-phone-btn"
               >

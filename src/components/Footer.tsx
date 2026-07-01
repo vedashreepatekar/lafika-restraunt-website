@@ -55,9 +55,9 @@ export default function Footer() {
             <div className="flex space-x-3 pt-2">
               {[
                 { icon: <Instagram size={16} />, url: "https://instagram.com/lafika.amravati", label: "Instagram" },
-                { icon: <MessageSquare size={16} />, url: "https://wa.me/919822700330", label: "WhatsApp" },
+                { icon: <MessageSquare size={16} />, url: "https://wa.me/917777889990", label: "WhatsApp" },
                 { icon: <Facebook size={16} />, url: "#", label: "Facebook" },
-                { icon: <PhoneCall size={16} />, url: "tel:+919822700330", label: "Call support" }
+                { icon: <PhoneCall size={16} />, url: "tel:+917777889990", label: "Call support" }
               ].map((item, index) => (
                 <a
                   key={index}

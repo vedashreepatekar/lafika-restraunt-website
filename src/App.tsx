@@ -28,7 +28,7 @@ export default function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappNumber = "919822700330";
+  const whatsappNumber = "917777889990";
   const whatsappMessage = "Hello! I am viewing La'Fika's premium website and would like to ask a question.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -91,7 +91,7 @@ export default function App() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
               transition={{ delay: 0.05 }}
-              href="tel:+919822700330"
+              href="tel:+917777889990"
               className="p-3.5 bg-charcoal text-gold hover:bg-gold hover:text-charcoal rounded-full pointer-events-auto shadow-xl border border-gold/30 flex items-center justify-center transition-all hover:scale-115 active:scale-95"
               title="Dial restaurant desk"
               id="floating-dialer"
