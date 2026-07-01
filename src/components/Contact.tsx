@@ -4,7 +4,7 @@ export default function Contact() {
   const whatsappNumber = "917777889990";
   const whatsappMessage = "Hi La'Fika! I would like to inquire about tables or check availability.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-  const instagramUrl = "https://instagram.com/lafika.amravati"; // Placeholder or real
+  const instagramUrl = "https://instagram.com/lafikamulticuisine"; // Placeholder or real
   const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=La'Fika+Multicuisine+Restaurant+Sharda+Vihar+Amravati";
 
   return (

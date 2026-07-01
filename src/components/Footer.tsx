@@ -54,7 +54,7 @@ export default function Footer() {
             {/* Social media icons */}
             <div className="flex space-x-3 pt-2">
               {[
-                { icon: <Instagram size={16} />, url: "https://instagram.com/lafika.amravati", label: "Instagram" },
+                { icon: <Instagram size={16} />, url: "https://instagram.com/lafikamulticuisine", label: "Instagram" },
                 { icon: <MessageSquare size={16} />, url: "https://wa.me/917777889990", label: "WhatsApp" },
                 { icon: <Facebook size={16} />, url: "#", label: "Facebook" },
                 { icon: <PhoneCall size={16} />, url: "tel:+917777889990", label: "Call support" }
@@ -140,7 +140,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.2em] font-mono font-bold text-gold mb-6 flex items-center justify-between">
               <span>Instagram Feed</span>
-              <span className="text-[9px] text-white/40 normal-case font-light">@lafika.amravati</span>
+              <span className="text-[9px] text-white/40 normal-case font-light">@lafikamulticuisine</span>
             </h4>
             
             <div className="grid grid-cols-3 gap-2">
